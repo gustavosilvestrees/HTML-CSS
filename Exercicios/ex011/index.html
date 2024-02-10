@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HMTL5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <P>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</P>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <p><audio src="media/marble_zone_mp3.mp3" autoplay controls></audio></p>
+    <p><audio src="media/ice_mountain_mp3.mp3" autoplay controls></audio></p>
+
+    <audio preload="metadata" autoplay controls>
+        <source src="media/marble_zone_mp3.mp3" type="audio/mpeg">
+        <source src="media/marble_zone_mp3.ogg" type="audio/ogg">
+        <source src="media/marble_zone_mp3.wav" type="audio/wav">
+        <p>Infelizmente  seu navegador não consegue reproduzir o áudio. <a href="media/marble_zone_mp3.mp3">Clique aqui para baixar o arquivo</a></p>
+
+    </audio>
+    
+</body>
+</html>
