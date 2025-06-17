@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+}
+
+body{
+    background-color: white;
+    font-family: Verdana, sans-serif;
+}
+
+.title{
+    font-size: 4.5em;
+    font-weight: bold;
+    font-family: "Passion One", sans-serif;
+}
+
+.subtitle{
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+}
+
+p{
+    font-size: 3em;
+    margin: 30px 0px 0px 0px;
+}
+
+p > a{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+section{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 2vw;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+
+    section{
+            font-size: 3vw;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .title{
+        font-size: 4em;
+    }
+
+    section{
+            font-size: 4vw;
+    }
+    
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    background-color: black;
+    height: 200px;
+}
+
+
+
+section > p {
+    margin: 100px 0px 100px 35px;
+}
+
+p{
+    font-family: "Sriracha", Arial, sans-serif;
+    font-size: 1.5em;
+}
+.special{
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 50px 0px 50px 20px;
+    background-color: rgba(0, 0, 0, 0.542);
+}
+
+.parallax{
+    width: 100%;
+    box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.51) inset;
+}
+
+footer{
+    display: flex;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: black;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.special2{
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0px;
+    font-size: 1em;
+    text-align: center;
+}
+
+section:nth-of-type(2){ /* pseudo classe que trabalha com 1 elemento especifico  do nossso documento HTML no caso a primeira section do HTML alterando ele somente */
+background-image: url(tea1.jpg);
+}
+
+section:nth-of-type(5){ /* pseudo classe que trabalha com 1 elemento especifico  do nossso documento HTML no caso a primeira section do HTML alterando ele somente */
+background-image: url(tea2.jpg);
+}
